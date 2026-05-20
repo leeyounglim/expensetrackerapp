@@ -18,7 +18,7 @@ const Setup = ({handleConnect}:SetupProps) => {
             <>
                 <div className="es-eyebrow">Email Sync · Setup</div>
                 <h1 className="es-title">Auto-import bank transactions</h1>
-                <Link href = '/securitymessage'>PLEASE READ: Security Message</Link>
+                <Link href = '/disclaimer.html'>PLEASE READ: Security Message</Link>
                 <p className="es-desc">
                 Connect your Gmail to automatically detect and import expenses from
                 bank notification emails. No manual entry needed.
