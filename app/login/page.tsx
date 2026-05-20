@@ -34,8 +34,7 @@ const Login = () => {
             console.log(data);
 
             // Only redirect AFTER the fetch completes
-            router.refresh();
-            router.push('/home');
+            window.location.href = '/home'
         } catch (err) {
             console.error("fetch error:", err);
         }
