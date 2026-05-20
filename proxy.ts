@@ -8,7 +8,8 @@ export async function proxy(request: NextRequest) {
   if (isApiRoute) return NextResponse.next()
 
   // Check for Supabase session cookie directly (no createServerClient needed)
-  const hasSession = request.cookies.has('sb-dwazttcvdqwqujkjqumw-auth-token') 
+  const allCookies = request.cookies.getAll();
+  const hasSession = allCookies.some(cookie=> cookie.name.startsWith('sb-dwazttcvdqwqujkjqumw-auth-token'))
 
   if (!hasSession && !isAuthPage) {
     return NextResponse.redirect(new URL('/login', request.url))
