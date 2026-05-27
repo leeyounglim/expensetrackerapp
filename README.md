@@ -6,7 +6,7 @@
 ![Supabase](https://img.shields.io/badge/Supabase-Database_&_Auth-3ECF8E?logo=supabase)
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel)
 
-
+https://expensetrackerapp-tawny.vercel.app/login
 ## 🚀 Overview
 
 Tracking expenses manually is tedious. This application solves that by integrating directly with the user's email inbox (via secure IMAP) to automatically detect, parse, and log bank transaction receipts (e.g., DBS, UOB). 
@@ -48,10 +48,11 @@ bash
 git clone [https://github.com/](https://github.com/)[YourUsername]/[YourRepoName].git
 cd [YourRepoName]
 
-2. Install dependencies
+### 2. Install dependencies
 Bash
 npm install
-3. Configure Environment Variables
+
+### 3. Configure Environment Variables
 Create a .env.local file in the root directory and add your Supabase and Encryption keys. Never commit this file to version control.
 
 Code snippet
@@ -59,6 +60,6 @@ NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ENCRYPTION_KEY=your_secure_random_32_character_string
 
-4. Run the development server
+### 4. Run the development server
 Bash
 npm run dev
